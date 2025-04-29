@@ -332,3 +332,44 @@ fieldset textarea {
   color: var(--text-secondary-color);
   background-color: var(--gray-ultra-light-color);
 }
+
+/*Estiliza a página de Produtos*/
+.product-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+}
+
+.product-item {
+  background-color: var(--gray-very-ultra-light-color);
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  padding: 1rem;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s ease;
+}
+
+.product-item:hover {
+  transform: scale(1.03);
+  cursor: pointer;
+}
+
+.product-item img {
+  width: 100%;
+  max-height: 140px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 0.75rem;
+}
+
+.product-item h3 {
+  font-size: 1.4rem;
+  margin: 0.5rem 0;
+  color: var(--text-secondary-color);
+}
+
+.product-item p {
+  margin: 0.25rem 0;
+  font-size: 1.2rem;
+}

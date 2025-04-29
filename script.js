@@ -9,3 +9,23 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   });
 });
+
+function sendForm(event) {
+  event.preventDefault();
+  showModal("Email enviado com sucesso!")
+  event.target.reset();
+}
+
+// Função para exibir modal de mensagens
+function showModal(message) {
+  const modal = document.getElementById('modal');
+  const messageElement = document.getElementById('modal-message');
+  const closeButton = document.getElementById('close-modal');
+
+  messageElement.textContent = message;
+  modal.classList.remove('hidden');
+
+  closeButton.onclick = () => {
+    modal.classList.add('hidden');
+  };
+}

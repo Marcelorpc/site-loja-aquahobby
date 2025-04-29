@@ -33,7 +33,66 @@
   </header>
 
   <main>
-
+    <div id="modal" class="hidden">
+      <div class="modal-box">
+        <h1 id="modal-message"></h1>
+        <button id="close-modal">Fechar</button>
+      </div>
+    </div>
+    <section class="contact">
+      <form action="#" onsubmit="sendForm(event)">
+        <fieldset>
+          <h1>Entre em Contato</h1>
+          <div>
+            <label for="form-nome">Nome:</label>
+            <input id="form-nome" type="text" placeholder="Digite seu nome" required>
+          </div>
+          <div>
+            <label for="form-nome">Email:</label>
+            <input id="form-nome" type="email" placeholder="seunome@email.com" required>
+          </div>
+          <div>
+            <label for="form-nome">Celular:</label>
+            <input id="form-nome" type="tel" placeholder="21 99999 9999">
+          </div>
+          <div id="contact-message">
+            <label for="form-texto">Deixe sua mensagem:</label>
+            <textarea name="form-texto" id="form-texto" placeholder="Digite sua mensagem"></textarea>
+          </div>
+          <div>
+            <button class="form-button" type="submit">Enviar</button>
+            <button class="form-button" type="reset">Limpar</button>
+          </div>
+        </fieldset>
+      </form>
+      <div>
+        <div class="contact-content">
+          <h1>Estamos ao Seu Alcance</h1>
+          <div class="contact-content-information">
+            <h2>Endereço</h2>
+            <p>Rio de Janeiro, Rio de Janeiro, Brasil.</p>
+            <h2>Email</h2>
+            <p>aquahobby@gmail.com</p>
+            <h2>Celular</h2>
+            <p>(21) 98695-0900</p>
+          </div>
+          <div class="badges">
+            <a href="https://www.linkedin.com/in/marcelorpc/" target="_blank">
+              <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white"
+                alt="linkedin" width="120" height="30" />
+            </a>
+            <a href="https://wa.me/5521986960700" target="_blank">
+              <img src="https://img.shields.io/badge/WhatsApp-25D366?style=for-the-badge&logo=whatsapp&logoColor=white"
+                alt="whatsapp" width="120" height="30">
+            </a>
+            <a href="https://www.instagram.com/marcelorpc_fotografia/" target="_blank">
+              <img
+                src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white"
+                alt="instagram" width="130" height="30">
+            </a>
+          </div>
+        </div>
+    </section>
   </main>
 
   <footer>

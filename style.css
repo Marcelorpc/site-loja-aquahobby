@@ -158,6 +158,22 @@ footer {
   height: 20em;
 }
 
+/*Estiliza a página Sobre*/
+.owners {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+  padding: 2em 4em;
+}
+
+.owners p {
+  margin-block: 1em 0;
+}
+
+.owners img {
+  border-radius: 10px;
+}
+
 /*Estiliza a página Contatos*/
 .contact {
   display: flex;

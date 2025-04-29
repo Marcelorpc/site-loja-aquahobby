@@ -3,6 +3,9 @@
   font-size: 62.5%;
 
   --gray-ultra-light-color: #f1f1f1;
+  --gray-very-ultra-light-color: #fdfdfd;
+  --text-primary-color: #00334d;
+  --text-secondary-color: #006994;
 }
 
 * {
@@ -26,6 +29,12 @@ body {
 main {
   min-height: 400px;
   padding: 0em 30em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2em;
+  margin: auto;
 }
 
 /*Estiliza o cabeçalho*/
@@ -117,4 +126,32 @@ footer {
   transform: rotate(180deg);
   width: 100%;
   height: 20em;
+}
+
+/*Estiliza o conteúdo de cada página*/
+
+/*Estiliza a Home*/
+.home-content {
+  padding: 4em 2em;
+  max-width: 800px;
+  color: var(--text-primary-color);
+  font-size: 1.4rem;
+}
+
+.home-content section {
+  background-color: var(--gray-very-ultra-light-color);
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.home-content h2,
+.home-content h3 {
+  color: var(--text-secondary-color);
+  margin-bottom: 10px;
+}
+
+.home-content ul li {
+  margin-bottom: 8px;
+  font-size: 1.1em;
 }

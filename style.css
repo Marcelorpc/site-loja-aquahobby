@@ -25,12 +25,13 @@ body {
 
 main {
   min-height: 400px;
+  padding: 0em 30em;
 }
 
 /*Estiliza o cabeçalho*/
 header {
   height: 40em;
-  background-image: 
+  background-image:
     linear-gradient(to bottom, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2)),
     url('imagens/landscape.jpg');
   background-size: cover;
@@ -42,21 +43,66 @@ header {
   justify-content: center;
 }
 
-.header-title {
-  margin-top: 10em;
+.header-title-menu {
+  align-self: flex-start;
+  margin-top: 5em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-.header-title h1 {
+.header-title-menu h1 {
   color: var(--gray-ultra-light-color);
   font-size: 10em;
+  text-shadow:
+    -1px -1px 1px black,
+    1px -1px 1px black,
+    -1px 1px 1px black,
+    1px 1px 1px black;
 }
 
 .wave {
   position: absolute;
   bottom: 0px;
-  width:  100%;
+  width: 100%;
   height: 20em;
   overflow: visible;
+}
+
+/*Estilza o menu de navegação*/
+.menu {
+  z-index: 1;
+  margin-top: 1.5em;
+  display: flex;
+  gap: 2em;
+  font-size: 2em;
+}
+
+.menu ul {
+  list-style: none;
+  display: flex;
+  gap: 100px;
+}
+
+.menu a {
+  text-decoration: none;
+  color: var(--gray-ultra-light-color);
+  font-weight: normal;
+  text-shadow:
+    -1px -1px 1px black,
+    1px -1px 1px black,
+    -1px 1px 1px black,
+    1px 1px 1px black;
+}
+
+.menu a:hover {
+  text-decoration: underline;
+}
+
+.menu a.active {
+  font-weight: bold;
+  text-decoration: underline;
 }
 
 /*Estiliza o footer*/
@@ -69,6 +115,6 @@ footer {
 .footer-bg {
   position: absolute;
   transform: rotate(180deg);
-  width:  100%;
+  width: 100%;
   height: 20em;
 }

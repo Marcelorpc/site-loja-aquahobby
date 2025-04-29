@@ -29,3 +29,34 @@ function showModal(message) {
     modal.classList.add('hidden');
   };
 }
+
+// Lógica do carrinho de compras
+const cart = {};
+
+function addToCart(productName) {
+  if (cart[productName]) {
+    cart[productName]++;
+  } else {
+    cart[productName] = 1;
+  }
+
+  renderCart();
+}
+
+function renderCart() {
+  const cartItemsEl = document.getElementById("cart-items");
+  cartItemsEl.innerHTML = "";
+
+  for (const name in cart) {
+    const li = document.createElement("li");
+    li.textContent = `${name}: ${cart[name]}`;
+    cartItemsEl.appendChild(li);
+  }
+}
+
+function clearCart() {
+  for (const key in cart) {
+    delete cart[key];
+  }
+  renderCart();
+}

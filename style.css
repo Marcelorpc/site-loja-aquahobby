@@ -27,7 +27,7 @@ body {
 }
 
 main {
-  min-height: 400px;
+  min-height: 700px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -352,7 +352,6 @@ fieldset textarea {
 
 .product-item:hover {
   transform: scale(1.03);
-  cursor: pointer;
 }
 
 .product-item img {
@@ -372,4 +371,36 @@ fieldset textarea {
 .product-item p {
   margin: 0.25rem 0;
   font-size: 1.2rem;
+}
+
+/*Estiliza o carrinho de compras */
+#cart {
+  position: fixed;
+  top: 10rem;
+  right: 2rem;
+  width: 260px;
+  background: var(--gray-very-ultra-light-color);
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  padding: 2em;
+  z-index: 999;
+}
+
+#cart h2 {
+  margin-top: 0;
+  font-size: 20px;
+  color: var(--text-primary-color);
+  padding-bottom: 1em;
+}
+
+#cart-items li {
+  padding: 8px 0;
+  border-bottom: 1px dashed #ccc;
+  color: #444;
+  font-size: 16px;
+}
+
+#cart button {
+  margin-top: 1em;
 }

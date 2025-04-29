@@ -10,6 +10,12 @@
   <title>Aquahobby</title>
 </head>
 
+<aside id="cart">
+  <h2>Carrinho</h2>
+  <ul id="cart-items"></ul>
+  <button class="form-button" onclick="clearCart()">Esvaziar Carrinho</button>
+</aside>
+
 <body>
   <header>
     <div class="header-title-menu">
@@ -33,12 +39,6 @@
   </header>
 
   <main>
-    <div id="modal" class="hidden">
-      <div class="modal-box">
-        <h1 id="modal-message"></h1>
-        <button id="close-modal">Fechar</button>
-      </div>
-    </div>
     <section>
       <h2>Peixes de Água Doce</h2>
       <p>Conheça nossa seleção especial de peixes ornamentais de água doce. Todos os exemplares são cuidadosamente
@@ -51,6 +51,7 @@
           <p><strong>pH:</strong> 6.0 - 7.0</p>
           <p><strong>Temperatura:</strong> 22°C - 28°C</p>
           <p><strong>Valor:</strong> R$ 5,90</p>
+          <button class="form-button" onclick="addToCart('Tetra Neon')">Adicionar</button>
         </li>
         <li class="product-item" onclick="showModal('Entre em contato para realizar a compra.')">
           <img src="imagens/peixes-agua-doce/molinesia.webp" alt="Molinésia">
@@ -58,6 +59,8 @@
           <p><strong>pH:</strong> 7.0 - 8.5</p>
           <p><strong>Temperatura:</strong> 24°C - 28°C</p>
           <p><strong>Valor:</strong> R$ 7,50</p>
+          <button class="form-button" onclick="addToCart('Molinésia')">Adicionar</button>
+
         </li>
         <li class="product-item" onclick="showModal('Entre em contato para realizar a compra.')">
           <img src="imagens/peixes-agua-doce/platy.jpeg" alt="Platy">
@@ -65,6 +68,8 @@
           <p><strong>pH:</strong> 7.0 - 8.2</p>
           <p><strong>Temperatura:</strong> 22°C - 26°C</p>
           <p><strong>Valor:</strong> R$ 6,90</p>
+          <button class="form-button" onclick="addToCart('Platy')">Adicionar</button>
+
         </li>
         <li class="product-item" onclick="showModal('Entre em contato para realizar a compra.')">
           <img src="imagens/peixes-agua-doce/kinguio.webp" alt="Espada (Xipho)">
@@ -72,6 +77,8 @@
           <p><strong>pH:</strong> 7.0 - 8.0</p>
           <p><strong>Temperatura:</strong> 24°C - 28°C</p>
           <p><strong>Valor:</strong> R$ 7,90</p>
+          <button class="form-button" onclick="addToCart('Kinguio')">Adicionar</button>
+
         </li>
         <li class="product-item" onclick="showModal('Entre em contato para realizar a compra.')">
           <img src="imagens/peixes-agua-doce/betta.png" alt="Betta Macho">
@@ -79,6 +86,8 @@
           <p><strong>pH:</strong> 6.5 - 7.5</p>
           <p><strong>Temperatura:</strong> 25°C - 30°C</p>
           <p><strong>Valor:</strong> R$ 12,00</p>
+          <button class="form-button" onclick="addToCart('Betta Macho')">Adicionar</button>
+
         </li>
         <li class="product-item" onclick="showModal('Entre em contato para realizar a compra.')">
           <img src="imagens/peixes-agua-doce/corydora.jpeg" alt="Corydora Bronze">
@@ -86,6 +95,8 @@
           <p><strong>pH:</strong> 6.0 - 7.8</p>
           <p><strong>Temperatura:</strong> 22°C - 28°C</p>
           <p><strong>Valor:</strong> R$ 8,90</p>
+          <button class="form-button" onclick="addToCart('Corydora Bronze')">Adicionar</button>
+
         </li>
         <li class="product-item" onclick="showModal('Entre em contato para realizar a compra.')">
           <img src="imagens/peixes-agua-doce/carpa.png" alt="Paulistinha (Zebra Danio)">
@@ -93,6 +104,8 @@
           <p><strong>pH:</strong> 6.5 - 7.2</p>
           <p><strong>Temperatura:</strong> 20°C - 26°C</p>
           <p><strong>Valor:</strong> R$ 4,90</p>
+          <button class="form-button" onclick="addToCart('Carpa Vermelha')">Adicionar</button>
+
         </li>
         <li class="product-item" onclick="showModal('Entre em contato para realizar a compra.')">
           <img src="imagens/peixes-agua-doce/cascudo.jpg" alt="Barbo Ouro">
@@ -100,6 +113,8 @@
           <p><strong>pH:</strong> 6.0 - 7.5</p>
           <p><strong>Temperatura:</strong> 22°C - 26°C</p>
           <p><strong>Valor:</strong> R$ 6,50</p>
+          <button class="form-button" onclick="addToCart('Cascudo')">Adicionar</button>
+
         </li>
         <li class="product-item" onclick="showModal('Entre em contato para realizar a compra.')">
           <img src="imagens/peixes-agua-doce/acara-bandeira.png" alt="Acará Bandeira">
@@ -107,6 +122,8 @@
           <p><strong>pH:</strong> 6.0 - 7.0</p>
           <p><strong>Temperatura:</strong> 24°C - 28°C</p>
           <p><strong>Valor:</strong> R$ 14,90</p>
+          <button class="form-button" onclick="addToCart('Acará Bandeira')">Adicionar</button>
+
         </li>
       </ul>
     </section>

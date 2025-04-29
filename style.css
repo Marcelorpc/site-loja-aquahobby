@@ -404,3 +404,8 @@ fieldset textarea {
 #cart button {
   margin-top: 1em;
 }
+
+#cart p {
+  margin-top: 1em;
+  font-size: 1.3em;
+}

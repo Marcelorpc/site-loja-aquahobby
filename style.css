@@ -28,13 +28,43 @@ body {
 
 main {
   min-height: 400px;
-  padding: 0em 30em;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   gap: 2em;
   margin: auto;
+  max-width: 800px;
+  color: var(--text-primary-color);
+  font-size: 1.4rem;
+  line-height: 1.5em;
+  text-align: justify;
+}
+
+main section {
+  background-color: var(--gray-very-ultra-light-color);
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+main h2,
+main h3 {
+  color: var(--text-secondary-color);
+  margin-bottom: 1.5em;
+}
+
+main ul li {
+  margin-bottom: 8px;
+  margin-bottom: 1em;
+}
+
+main ul li strong {
+  display: block;
+}
+
+main p {
+  margin-bottom: 1em;
 }
 
 /*Estiliza o cabeçalho*/
@@ -126,32 +156,4 @@ footer {
   transform: rotate(180deg);
   width: 100%;
   height: 20em;
-}
-
-/*Estiliza o conteúdo de cada página*/
-
-/*Estiliza a Home*/
-.home-content {
-  padding: 4em 2em;
-  max-width: 800px;
-  color: var(--text-primary-color);
-  font-size: 1.4rem;
-}
-
-.home-content section {
-  background-color: var(--gray-very-ultra-light-color);
-  padding: 20px;
-  border-radius: 12px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-}
-
-.home-content h2,
-.home-content h3 {
-  color: var(--text-secondary-color);
-  margin-bottom: 10px;
-}
-
-.home-content ul li {
-  margin-bottom: 8px;
-  font-size: 1.1em;
 }
